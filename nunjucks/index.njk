@@ -1,0 +1,21 @@
+{% extends "layouts/_default.njk" %}
+
+{% set page = {
+  language: 'ru',
+  name: 'home',
+  title: 'Yellfy',
+  appTitle: 'Yellfy',
+  description: 'Your great description of page'
+} %}
+
+{% block header %}
+  {% include "partials/_header.njk" %}
+{% endblock %}
+
+{% block main %}
+  {% include "pages/index/_main.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/_footer.njk" %}
+{% endblock %}

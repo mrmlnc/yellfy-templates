@@ -1,0 +1,19 @@
+{
+  "name": "yellfy-templates",
+  "version": "2.0.0",
+  "scripts": {
+    "pretest": "rimraf build",
+    "lint-pug": "pug-lint pug",
+    "compile-pug": "pug pug/index.pug --out build/pug --obj data.json --pretty",
+    "compile-njk": "nunjucks --path nunjucks index.njk --out build/nunjucks data.json",
+    "test": "npm run lint-pug && npm run compile-pug && npm run compile-njk"
+  },
+  "devDependencies": {
+    "nunjucks": "^2.4.2",
+    "nunjucks-cli": "^0.4.9",
+    "pug": "^2.0.0-beta5",
+    "pug-cli": "^1.0.0-alpha6",
+    "pug-lint": "^2.3.0",
+    "rimraf": "^2.5.4"
+  }
+}
