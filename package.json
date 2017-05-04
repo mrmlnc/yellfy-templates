@@ -9,8 +9,8 @@
     "test": "npm run lint-pug && npm run compile-pug && npm run compile-njk"
   },
   "devDependencies": {
-    "nunjucks": "^2.4.2",
-    "nunjucks-cli": "^0.4.9",
+    "nunjucks": "^3.0.0",
+    "nunjucks-cli": "^0.5.1",
     "pug": "^2.0.0-beta5",
     "pug-cli": "^1.0.0-alpha6",
     "pug-lint": "^2.3.0",
